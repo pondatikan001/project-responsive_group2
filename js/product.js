@@ -1,7 +1,7 @@
 //select product
 let productid = new URLSearchParams(window.location.search).get("id");
 console.log(`productid`, productid);
-
+const Size=[7,8,9,10,11]
 const getProductdetail = async () => {
     try {
         const response = await axios.get(
@@ -28,7 +28,7 @@ const getProductdetail = async () => {
                                        
                                         <select class="form-select" id="selectSize" aria-label="Default select example">
                                             <option selected >Please Select</option>
-                                            ${product.prdSize.map((product) => {
+                                            ${Size.map((product) => {
                                                 return `<option value ="${product}">${product}</option>`
                                             })}
                                         </select>

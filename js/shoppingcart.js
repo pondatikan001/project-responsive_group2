@@ -1,3 +1,4 @@
+const Size=[7,8,9,10,11]
 const gettoCart = () => {
     const order = JSON.parse(localStorage.getItem('product'))
     console.log(order);
@@ -18,9 +19,9 @@ const gettoCart = () => {
                         <div class="row g-3 bag-select">
                             <div class="col-5">
                                 <label for="inputEmail4" class="form-label">Size</label>
-                                <select class="form-select" aria-label="Default select example">
-                                <option selected >${product.prdSize}</option>
-                                </select>
+                                <div  aria-label="Default select example">
+                                <div>${product.prdSize}</div>
+                                </div>
                             </div>
                             <div class="col-3">
                                 <label for="inputEmail4" class="form-label">Quantity</label>
@@ -51,7 +52,6 @@ const gettoCart = () => {
             </div>
         </div>
 
-        <div class="hide-id">${i = i + 1}</div>
         `
     ).join("");
 }
