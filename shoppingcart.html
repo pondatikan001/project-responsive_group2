@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/shoppingcart.css">
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+
+</head>
+
+<body class="bag-body cart-page" onload="gettoCart();calculateSum();">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid top-nav">
+            <div class="navbarblack" href="#">
+                <img src="./image/Bitmaplogo2.png" class="logo-icon d-inline-block align-text-top" id="logo-icon">
+                <div class="contai-menu d-flex justify-content-between">
+                    <a onclick="location.href = 'index.html'" class="home">Home</a>
+                    <div class="container-right ">
+                        <img src="./image/whitebag.png" class="bag-icon" id="bag-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bagblack d-flex justify-content-end">
+        <img src="./image/bagchart.png" class="bag-bicon" id="bag-bicon">
+    </div>
+
+
+
+    <div class="content">
+        <div class="row cart" id="cart">
+            <div class="col-md-8 col-sm-12">
+                <div class="row">
+                    <h1 class="content-bag-title">Bag</h1>
+                </div>
+                <div class="row" id="showProduct"></div>
+                <div class="row back">
+                    <a href="index.html">← Continue shopping</a>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-4 col-sm-12">
+                <div class="summary-content">
+                    <h1 class="content-bag-title">Summary</h1>
+                    <div class="sum-detail" id="sum-detail">
+                        
+                        
+                    </div>
+                    <div class="row g-3 sum-total-all">
+                        <div class="col">
+                            <p class="summary-total">Total</p>
+                        </div>
+                        <div class="col">
+                            <p class="price-total" id="price-total"></p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark checkout-btn" onclick="location.href = 'checkout.html'">Checkout</button>
+                    <button type="button" class="btn pay-btn"><img src="./image/paypal.png"></button>
+
+
+                </div> 
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/shoppingcart.js"></script>
+</body>
+<footer>
+    <div class="copy">Copyright © Jersey Shop</div>
+    <div class="privacy">Privacy &amp; Cookie | T&amp;C | Accessibility</div>
+</footer>
+
+</html>
