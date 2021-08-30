@@ -18,7 +18,7 @@ const getProduct = async () => {
                                   <p class="card-text">${product.prdPrice}THB</p>
                               </div>
                               <div class="col">
-                                  <button onclick="location.href = 'product.html?id=${product.id}';" type="button " class="btn btn-dark btn-addCart">Add</button>
+                                  <button onclick="location.href = 'product.html?id=${product.id}';" type="button " class="btn btn-dark btn-addproductCart">Add product</button>
                               </div>
                               </div>
                       </div>
@@ -33,7 +33,6 @@ const getProduct = async () => {
   }
 };
 
-//Slide baner
 const activeImage = document.querySelector(".carou-image-ac");
 const activeText = document.querySelector(".active-text");
 const getCarousel = async () => {
@@ -43,7 +42,6 @@ const getCarousel = async () => {
       );
       activeImage.src = response.data[3].imageUrl;
       activeText.innerHTML = response.data[3].sliderText;
-      //console.log(response.data[0])
       document.getElementById("carouselImage").innerHTML = response.data
       document.getElementById("carouselImage").innerHTML = response.data
           .map(

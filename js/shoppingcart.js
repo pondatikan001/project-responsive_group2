@@ -5,7 +5,6 @@ const gettoCart = () => {
     let i = 0
     document.getElementById("showProduct").innerHTML = order.map((product) =>
 
-
         `
         <div class="card card-bag  ">
             <div class="row">
@@ -56,25 +55,18 @@ const gettoCart = () => {
     ).join("");
 }
 
-  
 
-//-----------------คิดเงินหน้า cart------------------------//
 const productList = JSON.parse(localStorage.getItem('product'))
-
-//ตั้งarrayมารับค่าจำนวนที่เลือก
 let value = []
 let sumEachProduct = []
 let sumAll = 0
 let fee = 30;
-
-//set ค่าเริ่มต้นของarrayให้เป็น1
 
 for (var i = 0; i < productList.length; i++) {
     value[i] = 1;
 }
 console.log(value)
 
-//เมื่อกดเปลี่ยนจำนวน
 function summary() {
 
     let number = 1
@@ -103,7 +95,6 @@ function calculateSum() {
 
 }
 
-
 function removeProduct(index) {
     console.log(index)
     console.log(value[index])
@@ -115,10 +106,6 @@ function removeProduct(index) {
         location.reload();
     }
 }
-
-
-
-//-----------------แสดงราคาหน้าcart------------------------//
 
 function displayTotalInCart() {
     document.getElementById('sum-detail').innerHTML = `
