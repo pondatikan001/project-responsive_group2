@@ -1,0 +1,439 @@
+body {
+    font-family: 'Barlow Semi Condensed';
+    position: relative;
+  }
+  
+  .contai-menu {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .navbarblack {
+    color: white;
+    font-size: 20px;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .home {
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav.top-nav {
+    display: inline-block;
+  }
+  
+  .logo-icon {
+    width: 40px;
+    margin-left: 50px;
+  }
+  
+  div.navbar-brand {
+    padding: 20px 50px 10px 250px;
+  }
+  
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 10px 0px 10px 30px;
+  }
+  
+  li.nav-item {
+    padding: 0px 0px 0px 20px;
+  }
+  
+  .nav-down {
+    padding: 0;
+    margin-left: 0;
+  }
+  
+  .navbar-menu {
+    padding-left: 4%;
+    padding-bottom: 10px;
+    padding-top: 10;
+  }
+  
+  .carousel-text {
+    margin-top: 10px;
+  }
+  
+  .carousel-inner {
+    margin-top: 47px;
+  }
+  
+  img.d-block {
+    width: 100%;
+  }
+  
+  .carousel-control-prev {
+    margin-left: 10px;
+    margin-top: 80px;
+  }
+  
+  .carousel-control-next {
+    margin-right: 10px;
+    margin-top: 80px;
+  }
+  
+  .carousel-caption p {
+    font-size: 36px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .content {
+    margin: 47px 6%;
+  }
+/* Hide the browser's default checkbox */
+.textaddress input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .textaddress:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a black background */
+  .textaddress input:checked ~ .checkmark {
+    background-color: black;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .textaddress input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .textaddress .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .footercheck {
+    color: #868686;
+    margin-left: 85px;
+  }
+  
+  .card-bag-remove {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .addcf {
+    height: 40px;
+    width: 95%;
+    margin-left: 10px;
+    color: white;
+    background-color: black;
+  }
+  
+  .card-bag {
+    padding: 3%;
+  }
+  
+  body.cart-page {
+    background-color: white;
+  }
+  
+  .content-bag-title {
+    font-size: 24px;
+  }
+  
+  .summary-content {
+    padding: 20px;
+    background-color: #F5F5F5;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  
+  .sum-detail {
+    border-bottom: 1px solid lightgray;
+    margin-top: 30px;
+  }
+  
+  .summary-total {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+  }
+  
+  .sum-detail-title {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+  }
+  
+  .sum-total-all {
+    margin-top: 5px;
+  }
+  
+  .price-total {
+    font-weight: bold;
+    text-align: end;
+  }
+  
+  .price {
+    text-align: end;
+  }
+.checkout-btn {
+    width: 100%;
+  }
+  
+  .pay-btn {
+    background-color: white;
+    width: 100%;
+    border: 0.5px solid lightgray;
+    margin-top: 20px;
+    color: #646464;
+  }
+  
+  .pay-btn img {
+    margin-right: 10px;
+  }
+  
+  .back {
+    margin-top: 3%;
+  }
+  
+  .detail-small {
+    display: none;
+  }
+  
+  .title-pay {
+    font-weight: bold;
+  }
+  
+  .pay-choice {
+    margin-bottom: 30px;
+  }
+  
+  body.pay-body {
+    background-color: #F5F5F5;
+  }
+  
+  .payment-container {
+    background-color: white;
+    padding: 30px;
+  }
+  
+  .checkout-summary .summary-content {
+    background-color: white;
+    margin-left: 10px;
+  }
+  
+  .btn-discount {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  
+  .form-label {
+    color: #646464;
+  }
+  
+  .pay-small-size {
+    display: none;
+  }
+  
+  .form-check {
+    width: 100%;
+    background-color: white;
+  }
+  
+  .backcheck {
+    display: none;
+  }
+  
+  .card-bag-remove {
+    text-decoration: none;
+  }
+  
+  .card-body-bag {
+    margin-bottom: 5px;
+  }
+  
+  .backcheck a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .hide-id {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    footer {
+      display: none;
+    }
+    .navbar-dark {
+      display: none;
+    }
+    .navbar-light {
+      display: none;
+    }
+    #bag-bicon {
+      display: inline;
+      margin-right: 40px;
+      margin-top: 50px;
+      width: 20px;
+    }
+    .container-right img {
+      width: 100%;
+    }
+    .carousel-caption p {
+      font-size: 0.4rem;
+      margin-top: 20px;
+    }
+    select option {
+      display: none;
+    }
+    .card-bag-remove {
+      display: none;
+    }
+    .card-bag {
+      border: none;
+    }
+    .bag-select {
+      display: none;
+    }
+    .back {
+      display: none;
+    }
+    .summary-content {
+      padding-top: 5px;
+      margin-top: 30%;
+      background-color: white;
+    }
+    .summary-content .content-bag-title {
+      display: none;
+    }
+    .pay-btn {
+      display: none;
+    }
+    .sum-detail {
+      display: none;
+    }
+    .sum-total-all {
+      margin: 0px;
+    }
+    .pay-choice {
+      display: none;
+    }
+    .card-title-bag {
+      display: none;
+    }
+    .detail-small {
+      display: inline;
+      text-align: end;
+      padding-top: 10px;
+    }
+    .detail-small .price-red {
+      color: #B02B2B;
+    }
+    .detail-small .number {
+      color: gray;
+    }
+    .card-body-bag-right {
+      border-bottom: 1px solid lightgray;
+    }
+    body.bag-body {
+      background-color: #F5F5F5;
+    }
+    .pay-small-size {
+      display: block;
+    }
+    .showbtn {
+      display: none;
+    }
+    .navbarcheck {
+      display: none;
+    }
+    .backcheck {
+      display: inline;
+    }
+    .footercheck {
+      display: none;
+    }
+    .addtb, .form-select {
+      height: 60px;
+    }
+    .card-bag {
+      padding: 3% 3% 0 3%;
+    }
+    /* HIDE RADIO */
+    [type=radio] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    /* IMAGE STYLES */
+    [type=radio] + img {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+    .form-check {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .payment-container {
+      background-color: #F5F5F5;
+    }
+    .title-pay, .hide {
+      display: none;
+    }
+    .payment-sm {
+      font-weight: bold;
+    }
+    .arrow {
+      font-weight: bold;
+    }
+  }

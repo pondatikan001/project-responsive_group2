@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+
+</head>
+
+<body class="pay-body" onload="checkoutSum();">
+
+    <nav class="navbarcheck">
+        <div class="container-fluid top-nav">
+            <div class="navbarblack" href="#">
+                <img src="./image/Bitmaplogo2.png" class="logo-icon d-inline-block align-text-top" id="logo-icon">
+                <div class="contai-menu d-flex justify-content-center">
+                    <a class="checkout">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="backcheck">
+            <a href="./shoppingcart.html" class="arrow">←</a>
+            <h1>Checkout</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 payment-container">
+                <p class="title-pay">Payment method</p>
+                <div class="row pay-choice">
+                    <div class="col-2">
+                        <button type="button" class="btn pay-btn"><img src="./image/paypal-icon.png"
+                                width="20px">Paypal</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn pay-btn"><img src="./image/credit.png" width="20px">Credit
+                            Card</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn pay-btn"><img src="./image/money.png" width="20px">Cash On
+                            Delivery</button>
+                    </div>
+                </div>
+
+                <div class="pay-small-size">
+                    <p class="payment-sm">Payment Method</p>
+                    <div class="form-check ">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Paypal
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <img src="./image/check.png">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Credit Card
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <img src="./image/Oval.png">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Cash On Delivery
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <img src="./image/Oval.png">
+                    </div>
+                    <br><p class="payment-sm">Shopping Address</p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Primary Address</option>
+                    </select>
+                    <br><p class="payment-sm">Coupon</p>
+                    <div class="btn-discount col-sm-12">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Enter code">
+                        <button type="button" class="btn btn-dark"><img class="discount-icon" src="./image/discount.png" width="20px"></button>
+                    </div>
+                </div>
+
+                <p class="title-pay">Add Payment Detials</p>
+                <div class=" hide row g-3">
+                    <div class="col-md-5">
+                        <label for="inputEmail4" class="form-label">Card Number</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPassword4" class="form-label">Expiry Date</label>
+                        <input type="password" class="form-control" id="inputPassword5" placeholder="MM/YY">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPassword4" class="form-label">CVV</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="XXX">
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <label for="inputAddress" class="form-label">Promo Code (If any)</label>
+                        <div class="btn-discount">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Enter code">
+                            <button type="button" class="btn btn-dark"><img class="discount-icon" src="./image/discount.png"
+                                    width="20px"></button>
+                        </div>
+                    </div>
+                    <p class="title-pay">Billing Address</p>
+                    <div class="checkcontent">
+                        <label class="textaddress">Billing address same as delivery address
+                            <input type="checkbox" checked="checked" class="checkbox">
+                            <span class="checkmark"></span>
+                    </div>
+                    <p class="tab-gray">"I authorise Jersey Shop to charge my card for a total amount of $110.92 USD"
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-3">
+                            <button class="showbtn ">BACK</button>
+                        </div>
+                        <div class="col-md-9 col-sm-12">
+                            <button class="addcf" id="btn-totalPrice" onclick="confirmPay()"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 col-sm-12 checkout-summary">
+                <div id="checkout-summary"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/payment.js"></script>
+    <div class="footercheck">
+        By placing your order you agree to our Terms & Conditions, privacy and returns policies . You also consent to
+        some of your data being stored, which<br>
+        may be used to make future shopping experiences better for you.
+    </div>
+</body>
+
+
+</html>
