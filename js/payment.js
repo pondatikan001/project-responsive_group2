@@ -64,7 +64,7 @@ const productList = JSON.parse(localStorage.getItem('product'))
 let value = []
 let sumEachProduct = []
 let sumAll = 0
-let fee = 30;
+let fee = 99;
 
 //set ค่าเริ่มต้นของarrayให้เป็น1
 
