@@ -42,7 +42,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   padding: 10px 0px 10px 30px;
 }
 
-li.nav-item {
+li.item {
   padding: 0px 0px 0px 20px;
 }
 
@@ -125,6 +125,9 @@ button.btn-addCart {
   right: 0;
   top: 80%;
   width: 60%;
+}
+button.btn-addCart:hover {
+  background-color: red;
 }
 
 .cart-text-old {
