@@ -37,7 +37,7 @@ const getProductdetail = async () => {
                                     
                                     <button class="btn btn-dark addtb" onclick="addItem('${productid}','${product.prdname}','${product.prdPrice}'
                                     ,'${product.prdSize.map(product => `${product}`).join('')}','${product.prdImageUrl}','${product.txtDetail}')";   
-                                    type="button "  id ="add_productSize">Add To Bag</button>
+                                    type="button "  id ="add_productSize">Add Product To Bag</button>
                                     </div>
                                     </div>
                                 </div>

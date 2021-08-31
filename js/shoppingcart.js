@@ -60,7 +60,7 @@ const productList = JSON.parse(localStorage.getItem('product'))
 let value = []
 let sumEachProduct = []
 let sumAll = 0
-let fee = 30;
+let fee = 99;
 
 for (var i = 0; i < productList.length; i++) {
     value[i] = 1;
