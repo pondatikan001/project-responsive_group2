@@ -14,16 +14,18 @@
 
 <body class="pay-body" onload="checkoutSum();">
 
+    <nav class="navbar navbar-dark bg-dark">
     <nav class="navbarcheck">
         <div class="container-fluid top-nav">
             <div class="navbarblack" href="#">
                 <img src="./image/Bitmaplogo2.png" class="logo-icon d-inline-block align-text-top" id="logo-icon">
-                <div class="contai-menu d-flex justify-content-center">
-                    <a class="checkout">CHECKOUT</a>
+                <div class="container-menu">
+                     <a class="home">CHECKOUT</a>
                 </div>
             </div>
         </div>
     </nav>
+</nav>
     <div class="content">
         <div class="backcheck">
             <a href="./shoppingcart.html" class="arrow"></a>
@@ -104,9 +106,9 @@
                     </div>
                     <p class="title-pay">Billing Address</p>
                     <div class="checkcontent">
+                        <input type="checkbox" checked="checked" class="checkbox">
+                    
                         <label class="textaddress">Billing address same as delivery address
-                            <input type="checkbox" checked="checked" class="checkbox">
-                            <span class="checkmark"></span>
                     </div>
                     <p class="tab-gray">"I authorise Jersey Shop to charge my card for a total amount of $110.92 USD"
                     </p>
