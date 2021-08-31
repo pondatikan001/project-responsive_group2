@@ -3,11 +3,13 @@ body {
   position: relative;
 }
 
-.contai-menu {
+.container-menu {
   width: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 }
 
 .navbarblack {
@@ -17,6 +19,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* background-color: ; */
 }
 
 .home {
@@ -25,7 +28,8 @@ body {
   text-decoration: none;
 }
 
-nav.top-nav {
+
+nav.top-navbar {
   display: inline-block;
 }
 
@@ -42,11 +46,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   padding: 10px 0px 10px 30px;
 }
 
-li.nav-item {
+li.item {
   padding: 0px 0px 0px 20px;
 }
 
-.nav-down {
+
+.navbar-down {
   padding: 0;
   margin-left: 0;
 }
